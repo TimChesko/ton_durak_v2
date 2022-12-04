@@ -1,0 +1,36 @@
+.area{
+    display: grid;
+    grid-template-areas: 'a b' 'fl sl';
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-around;
+    grid-row-gap: 50%;
+    height: fit-content;
+}
+
+.line{
+    grid-area: fl;
+    height: 2px;
+    width: 100%;
+    background: #1B8DFF;
+    color: #65B2FF;
+}
+
+.line[data-position="1"] {
+    grid-area: sl;
+}
+
+.current_games{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+    line-height: 1;
+    color: black
+}
+
+
+
+
+
+
+

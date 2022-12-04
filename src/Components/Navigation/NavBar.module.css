@@ -1,8 +1,6 @@
 .nav {
     grid-area: navigation;
     margin: auto 0 0 0;
-    font-family: 'Mulish', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 13px;
     line-height: 18px;
@@ -26,7 +24,7 @@
 
     border-radius: 28px;
     background: #F1F1F1;
-    margin: auto 5% auto 5%;
+    margin: 2% 5% 5% 5%;
 }
 
 .nav_menu {

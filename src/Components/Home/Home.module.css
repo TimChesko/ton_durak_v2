@@ -1,0 +1,6 @@
+.content{
+    grid-area: content;
+    display: grid;
+    height: 100%;
+    grid-template-rows: 8% 70% 22%;
+}

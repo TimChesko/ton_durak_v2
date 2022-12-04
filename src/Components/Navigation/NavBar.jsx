@@ -11,11 +11,11 @@ const NavBar = () => {
             <div className={css.nav_area}>
                 <div className={css.nav_rectangle}>
                     <div className={css.nav_menu}>
-                        <NavLink to={"/home"} className={flag} >
+                        <NavLink to={`/home`} className={flag} >
                             <HomeSvg/>
                             <a>Главная</a>
                         </NavLink>
-                        <NavLink to={"/profile"} className={flag}>
+                        <NavLink to={`/profile`} className={flag} >
                             <ProfileSvg/>
                             <a>Профиль</a>
                         </NavLink>

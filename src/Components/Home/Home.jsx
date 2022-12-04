@@ -1,9 +1,15 @@
 import React from 'react';
+import css from "./Home.module.css"
+import Balance from "./Balance/Balance";
+import Inventory from "./Inventory/Inventory";
+import Games from "./Games/Games";
 
 const Home = () => {
     return (
-        <div>
-            Home
+        <div className={css.content}>
+            <Balance/>
+            <Inventory/>
+            <Games/>
         </div>
     )
 }
