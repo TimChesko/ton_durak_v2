@@ -1,10 +1,11 @@
 .area{
     display: grid;
-    grid-template-areas: 'a b' 'fl sl';
-    margin-top: auto;
-    margin-bottom: auto;
+    grid-template-areas:
+            'a b'
+            'fl sl';
+    align-self: center;
     justify-content: space-around;
-    grid-row-gap: 50%;
+    grid-row-gap: 15%;
     height: fit-content;
 }
 
@@ -12,6 +13,7 @@
     grid-area: fl;
     height: 2px;
     width: 100%;
+    top: 0;
     background: #1B8DFF;
     color: #65B2FF;
 }
@@ -22,10 +24,22 @@
 
 .current_games{
     display: grid;
+    place-self: center;
     grid-template-columns: auto auto;
     column-gap: 5px;
+    padding: 15%;
     line-height: 1;
-    color: black
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    color: blue;
+
+}
+
+.txt{
+    color: initial;
 }
 
 
