@@ -5,7 +5,7 @@ import {ReactComponent as TonSvg} from "./../../../Assets/icon_ton_coin.svg"
 import {ReactComponent as DurakSvg} from "./../../../Assets/icon_durak_coin.svg"
 import {NavLink, useLocation} from "react-router-dom";
 
-const Balance = () => {
+const Balance = (props) => {
     let spring = {
         type: "spring",
         stiffness: 700,

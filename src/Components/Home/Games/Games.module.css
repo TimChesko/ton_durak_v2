@@ -1,3 +1,20 @@
 .content{
+}
+.rating{
+    position: relative;
+    bottom: -10%;
+    width: 100vw;
+    height: 52%;
+    background: blue;
+    border-radius: 16px 16px 0 0;
+    z-index: 0;
+}
 
+.default{
+    position: relative;
+    width: 100vw;
+    height: 48%;
+    background: white;
+    border-radius: 16px 16px 0 0;
+    z-index: 1;
 }

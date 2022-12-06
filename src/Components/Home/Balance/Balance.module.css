@@ -5,7 +5,6 @@
             'fl sl';
     align-self: center;
     justify-content: space-around;
-    grid-row-gap: 15%;
     height: fit-content;
 }
 
@@ -30,12 +29,13 @@
     padding: 15%;
     line-height: 1;
     text-decoration: none;
-    color: black;
+    color: #2A2A2A;
+    font-weight: 700;
 }
 
 .active{
-    color: blue;
-
+    color: #1B8DFF;
+    font-weight: 800;
 }
 
 .txt{
