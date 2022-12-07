@@ -1,20 +1,49 @@
 .content{
-}
-.rating{
     position: relative;
-    bottom: -10%;
-    width: 100vw;
-    height: 52%;
-    background: blue;
-    border-radius: 16px 16px 0 0;
-    z-index: 0;
 }
 
-.default{
-    position: relative;
+.rating{
+    position: absolute;
     width: 100vw;
-    height: 48%;
-    background: white;
+    height: 100%;
+    bottom: 0;
+    z-index: 0;
     border-radius: 16px 16px 0 0;
+
+    background: blue;
+    color: white;
+
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.rating_active{
+    height: 30vh;
+}
+
+.rating_disable{
+    height: 45%;
+    pointer-events: none;
+}
+
+.games{
+    position: absolute;
+    width: 100vw;
+    height: 50%;
+    bottom: 0;
     z-index: 1;
+    border-radius: 16px 16px 0 0;
+
+    background: grey;
+
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.games_active{
+    height: 76vh;
 }
