@@ -1,0 +1,41 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+}
+
+.description_game{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 2%;
+
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 9px;
+}
+
+.svg_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.disable{
+    display: none;
+}
+
+.find_game{
+
+}
+
+

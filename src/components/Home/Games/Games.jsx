@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import css from "./Games.module.css"
-import {motion, useMotionValue, useTransform} from "framer-motion";
+import {useLocation} from "react-router-dom";
+import RatingSearch from "./RatingSearch/RatingSearch";
+import RegularSearch from "./RegularSearch/RegularSearch";
 
 const Games = () => {
     let [viewRating, setViewRating] = useState(false)
@@ -17,21 +19,19 @@ const Games = () => {
         }
         setViewGames(!viewGames);
     };
-    let path = window.location.pathname
+    let path = useLocation().pathname
     let styleRating = `${css.rating} ${(path === "/home/durak") ? css.rating_disable : viewRating ? css.rating_active : null}`
     let styleGames = `${css.games} ${viewGames ? css.games_active : null}`
 
-    // const y = useMotionValue(1)
-    // const resize = useTransform(y, [0, 10], [50, 200])
-
     return (
         <div className={css.content}>
-            <motion.div
-                className={styleRating} onClick={openRating}>
-            </motion.div>
+            <div className={styleRating} onClick={openRating}>
+                <RatingSearch active={viewRating}/>
+            </div>
 
-            <motion.div className={styleGames} onClick={openGames}>
-            </motion.div>
+            <div className={styleGames} onClick={openGames}>
+                <RegularSearch active={viewGames}/>
+            </div>
         </div>
     )
 }

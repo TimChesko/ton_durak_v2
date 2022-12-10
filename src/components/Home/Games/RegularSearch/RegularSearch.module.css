@@ -1,0 +1,24 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+}
+
+.nav_content{
+    height: 100%;
+}
+
+.nav_content ul{
+    height:100%;
+    overflow:hidden;
+    overflow-y:scroll;
+}
+
+.nav_content li {
+    height: 50%;
+}
+
+.nav_disable{
+    display: none;
+}

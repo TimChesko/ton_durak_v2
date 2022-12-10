@@ -1,11 +1,11 @@
-import {motion} from 'framer-motion'
+import {motion} from 'framer-motion/dist/framer-motion'
 import React, {useState} from "react";
 import css from "./Balance.module.css"
-import {ReactComponent as TonSvg} from "./../../../Assets/icon_ton_coin.svg"
-import {ReactComponent as DurakSvg} from "./../../../Assets/icon_durak_coin.svg"
+import {ReactComponent as TonSvg} from "../../../assets/svg/balance/icon_ton_coin.svg"
+import {ReactComponent as DurakSvg} from "../../../assets/svg/balance/icon_durak_coin.svg"
 import {NavLink, useLocation} from "react-router-dom";
 
-const Balance = (props) => {
+const Balance = () => {
     let spring = {
         type: "spring",
         stiffness: 700,

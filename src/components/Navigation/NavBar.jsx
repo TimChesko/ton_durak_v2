@@ -1,8 +1,8 @@
 import React from 'react';
 import css from "./NavBar.module.css"
 import {NavLink} from "react-router-dom";
-import {ReactComponent as HomeSvg} from './../../Assets/icon_home.svg';
-import {ReactComponent as ProfileSvg} from './../../Assets/icon_profile.svg';
+import {ReactComponent as HomeSvg} from '../../assets/svg/nav/icon_home.svg';
+import {ReactComponent as ProfileSvg} from '../../assets/svg/nav/icon_profile.svg';
 
 const NavBar = () => {
     let flag = ({isActive}) => isActive ? `${css.nav_menu} ${css.active}` : css.nav_menu;
