@@ -1,41 +1,67 @@
 .content{
-    display: flex;
-    flex-direction: column;
     width: 100vw;
-    height: 100%;
+    place-content: center;
 }
 
-.description_game{
+.first_line{
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-    margin: 2%;
-
-    font-weight: 900;
-    font-size: 15px;
-    line-height: 9px;
-}
-
-.svg_area{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    flex-direction: row;
+    line-height: 100%;
+    margin-top: 1em;
 }
 
 .text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
 }
 
-.disable{
+.arrow{
+    width: 1.25rem;
+    height: 1.25rem;
+    display: inline-block;
+    position: relative;
+    margin: 0 1rem;
+}
+
+span{
+    top: .5rem;
+    position: absolute;
+    width: .75rem;
+    height: .1rem;
+    background-color: #efefef;
+    display: inline-block;
+    transition: all .2s ease;
+}
+
+span:first-of-type{
+    left: 0;
+    transform: rotate(45deg);
+}
+
+span:last-of-type{
+    right: 0;
+    transform: rotate(-45deg)
+}
+
+.active span:first-of-type{
+    transform: rotate(-45deg);
+}
+
+.active span:last-of-type{
+    transform: rotate(45deg)
+}
+
+.second_line{
+    display: flex;
+    margin-top: 5%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.nav_disable{
     display: none;
 }
 
-.find_game{
-
+.nav_content{
+    height: 100%;
 }
-
-

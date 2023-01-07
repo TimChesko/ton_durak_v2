@@ -35,9 +35,6 @@ const RegularSearch = (props) => {
         state.map(p => <GameElement infoGames={p}/>)
     return (
         <div className={css.content}>
-            <div>
-                Game
-            </div>
             <nav className={styleNav}>
                 <ul>
                     {gamesElements}

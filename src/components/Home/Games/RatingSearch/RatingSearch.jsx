@@ -1,29 +1,28 @@
-import React, {useState} from 'react';
+import React from 'react';
 import css from "./RatingSearch.module.css"
 import {ReactComponent as RegularSVG} from "../../../../assets/svg/games/rating_game.svg";
 
 const RatingSearch = (props) => {
-    let findGame = props.active ? css.find_game : css.disable
+    let find_game = props.active ? css.nav_content : css.nav_disable
+    let arrow_status = props.active ? css.active : null
     return (
         <div className={css.content}>
-            <div className={css.description_game}>
+            <div className={css.first_line}>
                 <div className={css.svg_area}>
                     <RegularSVG/>
                 </div>
                 <div className={css.text}>
-                    РЕЙТИНГОВАЯ ИГРА 1 НА 1
+                    РЕЙТИНГОВАЯ ИГРА
                 </div>
-                <button>
-                    TAP
-                </button>
+                <div className={`${css.arrow} ${arrow_status}`}>
+                    <span/>
+                    <span/>
+                </div>
             </div>
-            <div className={findGame}>
-                <div className={css.deposit}>
-
-                </div>
-                <div className={css.filters}>
-
-                </div>
+            <div className={css.second_line}>
+                <button>
+                    Кнопка поиск
+                </button>
             </div>
         </div>
     )

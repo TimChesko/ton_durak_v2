@@ -3,9 +3,13 @@
 }
 
 .rating{
-    position: absolute;
     width: 100vw;
     height: 75%;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    position: absolute;
     bottom: 0;
     z-index: 0;
     border-radius: 39px 39px 0 0;
