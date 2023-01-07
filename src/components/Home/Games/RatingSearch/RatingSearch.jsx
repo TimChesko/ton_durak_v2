@@ -3,15 +3,15 @@ import css from "./RatingSearch.module.css"
 import {ReactComponent as RegularSVG} from "../../../../assets/svg/games/rating_game.svg";
 
 const RatingSearch = (props) => {
-    let find_game = props.active ? css.nav_content : css.nav_disable
+    let second_line = props.active ? css.second_line : `${css.second_line} ${css.hide}`
     let arrow_status = props.active ? css.active : null
     return (
         <div className={css.content}>
             <div className={css.first_line}>
-                <div className={css.svg_area}>
+                <div>
                     <RegularSVG/>
                 </div>
-                <div className={css.text}>
+                <div>
                     РЕЙТИНГОВАЯ ИГРА
                 </div>
                 <div className={`${css.arrow} ${arrow_status}`}>
@@ -19,7 +19,7 @@ const RatingSearch = (props) => {
                     <span/>
                 </div>
             </div>
-            <div className={css.second_line}>
+            <div className={second_line}>
                 <button>
                     Кнопка поиск
                 </button>

@@ -1,16 +1,30 @@
 .content{
+    display: grid;
     width: 100vw;
-    place-content: center;
+    grid-template-areas: 'f' 's';
+    place-content: space-evenly;
 }
 
 .first_line{
+    grid-area: f;
     display: flex;
     flex-direction: row;
     line-height: 100%;
-    margin-top: 1em;
+    margin: .7em;
 }
 
-.text{
+.second_line{
+    grid-area: s;
+    height: 100%;
+
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.hide{
+    margin-top: 10%;
 }
 
 .arrow{
@@ -47,21 +61,4 @@ span:last-of-type{
 
 .active span:last-of-type{
     transform: rotate(45deg)
-}
-
-.second_line{
-    display: flex;
-    margin-top: 5%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-
-}
-
-.nav_disable{
-    display: none;
-}
-
-.nav_content{
-    height: 100%;
 }
